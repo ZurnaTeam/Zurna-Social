@@ -46,5 +46,11 @@ namespace ZURNA.API.Controllers
             await _user.Create(user,user.id);
         }
 
+        //[HttpPut, Route("api/users/{id}")]
+        //public async Task PutAsync(string id, [FromBody]User user)
+        //{
+
+        //}
+
     }
 }
