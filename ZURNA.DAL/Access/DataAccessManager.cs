@@ -33,7 +33,7 @@ namespace ZURNA.DAL.Access
         Task DeleteAsync(Guid guid);      
         Task<T> GetAsync(Guid guid);        
         Task<T> UpdateAsync(Guid guid,T model);        
-        Task<T> CreateAsync(T model);
+        Task<T> CreateAsync(T model,Guid guid);
        
     }
     public class FirebaseDataAccess<T> : IDataAccess<T>
@@ -47,9 +47,9 @@ namespace ZURNA.DAL.Access
         {
             _repo = new FireRepo<T>(_authentication, _baseurl, $"{typeof(T).Name}/");
         }
-        public async Task<T> CreateAsync(T model)
+        public async Task<T> CreateAsync(T model,Guid guid)
         {
-            await _repo.Add(model, Guid.NewGuid());
+            await _repo.Add(model, guid);
             return model;
         }
 

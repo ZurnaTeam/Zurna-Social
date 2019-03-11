@@ -25,7 +25,7 @@ namespace ZURNA.BL.BusinessLayer
     public abstract class BusinessBase<T>
     {
         public abstract Task<List<T>> GetList();
-        public abstract Task<T> Create(T model);
+        public abstract Task<T> Create(T model,Guid guid);
         public abstract Task Delete(Guid guid);
         public abstract Task<T> Find(Guid guid);
         public abstract Task<T> Update(T model, Guid guid);
@@ -41,9 +41,9 @@ namespace ZURNA.BL.BusinessLayer
             DataAccessManager<Users> dam = new DataAccessManager<Users>(_firedal);
         }
 
-        public override async Task<Users> Create(Users model)
+        public override async Task<Users> Create(Users model,Guid guid)
         {
-            return await _firedal.CreateAsync(model);
+            return await _firedal.CreateAsync(model,guid);
         }
 
         public override async Task Delete(Guid guid)

@@ -28,5 +28,23 @@ namespace ZURNA.API.Controllers
             var result = await _user.GetList();
             return Json(result);
         }
+
+        [Route("api/users/{hash}")]
+        public async Task<JsonResult<Users>> Get(string hash)
+        {
+            var result = await _user.Find(Guid.Parse(hash));
+            return Json(result);
+        }
+
+        public async Task Post([FromBody]Users user)
+        {
+            //Users user2 = new Users()
+            //{
+            //    id = new Guid(),
+            //    deviceid = "asdasdad",
+            //};
+            await _user.Create(user,user.id);
+        }
+
     }
 }

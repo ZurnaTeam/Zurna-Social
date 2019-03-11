@@ -28,7 +28,7 @@ namespace ZURNA.DAL.Test
                 phone = "+905318121351",
                 registerdate = DateTime.Now.AddDays(31)
             };
-            Users result = await _firedal.CreateAsync(users);
+            Users result = await _firedal.CreateAsync(users,users.id);
             if (result == null)
             {
                 throw new Exception("Ekleme işlemi hatalı");
