@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.WEB", "ZURNA.WEB\ZURNA.WEB.csproj", "{F41DC111-8CF7-4F09-8654-4F85B1552312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.API", "ZURNA.API\ZURNA.API.csproj", "{8B956272-8288-423D-A770-EE465D4D0E5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.DAL", "ZURNA.DAL\ZURNA.DAL.csproj", "{6AC83468-BE91-4543-A037-EFB4CECB696C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.BL", "ZURNA.BL\ZURNA.BL.csproj", "{813B6C77-5939-4BFD-BCA8-2A0AD1EC346A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.BL.Test", "ZURNA.BL.Test\ZURNA.BL.Test.csproj", "{8B92151A-103E-4D38-9855-C81B4DC8C187}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.DAL.Test", "ZURNA.DAL.Test\ZURNA.DAL.Test.csproj", "{813A6875-5380-4DD5-B656-8883E0244509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41DC111-8CF7-4F09-8654-4F85B1552312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41DC111-8CF7-4F09-8654-4F85B1552312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41DC111-8CF7-4F09-8654-4F85B1552312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41DC111-8CF7-4F09-8654-4F85B1552312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B956272-8288-423D-A770-EE465D4D0E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B956272-8288-423D-A770-EE465D4D0E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B956272-8288-423D-A770-EE465D4D0E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B956272-8288-423D-A770-EE465D4D0E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC83468-BE91-4543-A037-EFB4CECB696C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC83468-BE91-4543-A037-EFB4CECB696C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC83468-BE91-4543-A037-EFB4CECB696C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC83468-BE91-4543-A037-EFB4CECB696C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813B6C77-5939-4BFD-BCA8-2A0AD1EC346A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813B6C77-5939-4BFD-BCA8-2A0AD1EC346A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813B6C77-5939-4BFD-BCA8-2A0AD1EC346A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813B6C77-5939-4BFD-BCA8-2A0AD1EC346A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B92151A-103E-4D38-9855-C81B4DC8C187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B92151A-103E-4D38-9855-C81B4DC8C187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B92151A-103E-4D38-9855-C81B4DC8C187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B92151A-103E-4D38-9855-C81B4DC8C187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813A6875-5380-4DD5-B656-8883E0244509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813A6875-5380-4DD5-B656-8883E0244509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813A6875-5380-4DD5-B656-8883E0244509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813A6875-5380-4DD5-B656-8883E0244509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F2CB691-66F3-47A4-8CA7-21D0F1C6E5C3}
+	EndGlobalSection
+EndGlobal
