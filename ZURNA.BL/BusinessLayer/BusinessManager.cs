@@ -66,5 +66,45 @@ namespace ZURNA.BL.BusinessLayer
         {
             return await _firedal.UpdateAsync(guid, model);
         }
+
+    }
+    public class BusinessPost : BusinessBase<Post>
+    {
+        private FirebaseDataAccess<Post> _repo;
+        public BusinessPost()
+        {
+            _repo = new FirebaseDataAccess<Post>();
+            DataAccessManager<Post> dam = new DataAccessManager<Post>(_repo);
+        }
+        public override async Task<Post> Create(Post model, Guid guid)
+        {
+           return await _repo.CreateAsync(model, guid);
+        }
+
+        public override async Task Delete(Guid guid)
+        {
+            await _repo.DeleteAsync(guid);
+        }
+
+        public override async Task<Post> Find(Guid guid)
+        {
+            return await _repo.GetAsync(guid);
+        }
+
+        public override async Task<List<Post>> GetList()
+        {
+            return await _repo.GetListAsync();
+        }
+
+        public override async Task<Post> Update(Post model, Guid guid)
+        {
+            return await _repo.UpdateAsync(guid, model);
+        }
+        public async Task<List<Post>> GetPopularPost()
+        {
+            var result = await _repo.GetListAsync();
+            result = result.OrderByDescending(sa => (sa.content.like + sa.content.dislike) / (sa.content.view + 1)).Take(100).ToList();
+            return result;
+        }
     }
 }

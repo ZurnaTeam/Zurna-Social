@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\BusinessManager.cs" />
+    <Compile Include="BusinessLayer\HashTagManager.cs" />
+    <Compile Include="BusinessModel\HashtagModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

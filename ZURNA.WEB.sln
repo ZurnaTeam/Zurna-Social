@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28705.295
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.WEB", "ZURNA.WEB\ZURNA.WEB.csproj", "{F41DC111-8CF7-4F09-8654-4F85B1552312}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.BL.Test", "ZURNA.BL.Test\ZURNA.BL.Test.csproj", "{8B92151A-103E-4D38-9855-C81B4DC8C187}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.DAL.Test", "ZURNA.DAL.Test\ZURNA.DAL.Test.csproj", "{813A6875-5380-4DD5-B656-8883E0244509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZURNA.APITests", "ZURNA.APITests\ZURNA.APITests.csproj", "{948B43BF-0663-4B9A-9CA8-F72686C2F1D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{813A6875-5380-4DD5-B656-8883E0244509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{813A6875-5380-4DD5-B656-8883E0244509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{813A6875-5380-4DD5-B656-8883E0244509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948B43BF-0663-4B9A-9CA8-F72686C2F1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948B43BF-0663-4B9A-9CA8-F72686C2F1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948B43BF-0663-4B9A-9CA8-F72686C2F1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948B43BF-0663-4B9A-9CA8-F72686C2F1D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

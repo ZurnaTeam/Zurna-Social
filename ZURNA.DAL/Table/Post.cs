@@ -26,10 +26,12 @@ namespace ZURNA.DAL.Table
         public DateTime time { get; set; }
         public long like { get; set; }
         public long dislike { get; set; }
+        public long view { get; set; }
     }
     public class Comment
     {
         public string text { get; set; }
         public DateTime time { get; set; }
+        public Guid userid { get; set; }
     }
 }

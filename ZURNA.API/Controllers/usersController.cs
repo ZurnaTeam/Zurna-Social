@@ -28,7 +28,7 @@ namespace ZURNA.API.Controllers
             return Json(result);
         }
         // GET api/users/id
-        [Route("api/users/{hash}")]
+        [Route("api/users/{id}")]
         public async Task<JsonResult<Users>> Get(string id)
         {
             var result = await _user.Find(Guid.Parse(id));
