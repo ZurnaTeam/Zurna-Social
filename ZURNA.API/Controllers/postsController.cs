@@ -19,7 +19,7 @@ namespace ZURNA.API.Controllers
             _post = new BusinessPost();
             BusinessManager<Post> manager = new BusinessManager<Post>(_post);
         }
-        [HttpGet]
+        [HttpGet,Route("api/posts")]
         public async Task<JsonResult<List<Post>>> Get()
         {
             var result= await _post.GetList();
@@ -37,7 +37,11 @@ namespace ZURNA.API.Controllers
         {
             await _post.Update(post, Guid.Parse(id));
         }
-
+        [HttpPost,Route("api/posts/")]
+        public async Task Post([FromBody]Post post)
+        {
+            await _post.Create(post, post.id);
+        }
         [HttpDelete, Route("api/posts/{id}")]
         public async Task Delete(string id)
         {
