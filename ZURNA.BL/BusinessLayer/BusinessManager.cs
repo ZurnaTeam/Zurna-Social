@@ -80,22 +80,18 @@ namespace ZURNA.BL.BusinessLayer
         {
            return await _repo.CreateAsync(model, guid);
         }
-
         public override async Task Delete(Guid guid)
         {
             await _repo.DeleteAsync(guid);
         }
-
         public override async Task<Post> Find(Guid guid)
         {
             return await _repo.GetAsync(guid);
         }
-
         public override async Task<List<Post>> GetList()
         {
             return await _repo.GetListAsync();
         }
-
         public override async Task<Post> Update(Post model, Guid guid)
         {
             return await _repo.UpdateAsync(guid, model);
@@ -104,6 +100,13 @@ namespace ZURNA.BL.BusinessLayer
         {
             var result = await _repo.GetListAsync();
             result = result.OrderByDescending(sa => (sa.content.like + sa.content.dislike) / (sa.content.view + 1)).Take(100).ToList();
+            return result;
+        }
+        public async Task<List<Post>> GetCityPost(string city)
+        {
+            List<Post> result = await _repo.GetListAsync();
+            result = result.Where(sa => sa.content.location.city.ToLower() == city.ToLower())
+            .ToList();
             return result;
         }
     }

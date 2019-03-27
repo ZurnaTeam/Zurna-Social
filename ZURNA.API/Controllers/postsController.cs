@@ -18,6 +18,7 @@ namespace ZURNA.API.Controllers
         {
             _post = new BusinessPost();
             BusinessManager<Post> manager = new BusinessManager<Post>(_post);
+            
         }
         [HttpGet,Route("api/posts")]
         public async Task<JsonResult<List<Post>>> Get()
@@ -52,6 +53,12 @@ namespace ZURNA.API.Controllers
         public async Task<JsonResult<List<Post>>> GetPopularPost()
         {
             return Json(await _post.GetPopularPost());
+        }
+
+        [HttpPost,Route("api/posts/getcitypost")]
+        public async Task<JsonResult<List<Post>>> GetCityPost([FromBody]City city)
+        {
+            return Json(await _post.GetCityPost(city.Name));
         }
     }
 }
